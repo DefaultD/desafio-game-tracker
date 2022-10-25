@@ -1,0 +1,68 @@
+{
+  "listaDeJogos": [
+    {
+      "id": 0,
+      "titulo": "Batman: Arkham Knight",
+      "preco": "49,99",
+      "precoDesconto": "12,49",
+      "loja": 1,
+      "descricao": "teste de jogo"
+    },
+    {
+      "id": 1,
+      "titulo": "Arma 3",
+      "preco": "69,99",
+      "precoDesconto": "67",
+      "loja": 1,
+      "descricao": "teste"
+    },
+    {
+      "id": 2,
+      "titulo": "Jurassic World Evolution",
+      "preco": "79,99",
+      "precoDesconto": "19,99",
+      "loja": 1,
+      "descricao": "teste"
+    },
+    {
+      "id": 3,
+      "titulo": "The Sims 4",
+      "preco": "159,00",
+      "precoDesconto": "39,75",
+      "loja": 1,
+      "descricao": "teste de descricao"
+    },
+    {
+      "id": 4,
+      "titulo": "Battlefield V",
+      "preco": "299,00",
+      "precoDesconto": "119,60",
+      "loja": 1,
+      "descricao": "teste"
+    },
+    {
+      "id": 5,
+      "titulo": "valorant",
+      "preco": "300,99",
+      "precoDesconto": "1,99",
+      "loja": 3,
+      "descricao": "Jogo de tiro"
+    },
+    {
+      "id": 6,
+      "titulo": "OverWatch",
+      "preco": "500",
+      "precoDesconto": "300",
+      "loja": 1,
+      "descricao": "teste de descricao"
+    },
+    {
+      "id": 8,
+      "titulo": "Elden ring",
+      "preco": "300,00",
+      "precoDesconto": "299,00",
+      "loja": 3,
+      "descricao": "jogo daora"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+<section>
+    <div class="container">
+        <h2>Cadastro de Ofertas</h2>
+        <form [formGroup]="formulario">
+            <div class="grid">
+                <div class="campos">
+                    <mat-form-field appearance="outline">
+                        <mat-label>ID</mat-label>
+                        <input id="id" readonly name="id" formControlName="id" matInput placeholder="ID do jogo">
+                    </mat-form-field>
+                </div>
+
+
+                <div class="campos">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Título</mat-label>
+                        <input id="titulo" name="titulo" formControlName="titulo" matInput placeholder="Título do jogo">
+                    </mat-form-field>
+                    <div class="mensagem__erro"
+                        *ngIf="formulario.get('titulo')?.errors && formulario.get('titulo')?.touched">
+                        Digite um titulo!
+                    </div>
+                </div>
+
+                <div class="campos">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Preço</mat-label>
+                        <input id="preco" name="preco" formControlName="preco" matInput placeholder="Preço do jogo">
+                    </mat-form-field>
+                    <div class="mensagem__erro"
+                        *ngIf="formulario.get('preco')?.errors && formulario.get('preco')?.touched">
+                        Digite um preço valido!
+                    </div>
+                </div>
+
+                <div class="campos">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Preço com desconto</mat-label>
+                        <input id="precoDesconto" name="precoDesconto" formControlName="precoDesconto" matInput
+                            placeholder="Preço com desconto">
+                    </mat-form-field>
+                    <div class="mensagem__erro"
+                    *ngIf="formulario.get('precoDesconto')?.errors && formulario.get('precoDesconto')?.touched">
+                    Digite um preço com desconto valido!
+                </div>
+                </div>
+
+                <div class="campos">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Loja</mat-label>
+                        <mat-select name="loja" formControlName="loja">
+                            <mat-option *ngFor="let loja of lojas" [value]="loja.id">{{loja.nome}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+
+
+                <div class="campos">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Descrição</mat-label>
+                        <input matInput name="descricao" formControlName="descricao" placeholder="Digite uma Descrição">
+                    </mat-form-field>
+                </div>
+
+            </div>
+            <div class="campos">
+                <button (click)="criarOferta()" mat-raised-button color="primary">Salvar</button>
+                <button routerLink="/nossasofertas" class="cancelar" mat-raised-button color="primary">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</section>
