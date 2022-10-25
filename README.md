@@ -21,7 +21,7 @@ npm i
 ng serve
 
 
-#Abra outro terminal
+# Abra outro terminal
 
 cd .\adm\backend\
 
