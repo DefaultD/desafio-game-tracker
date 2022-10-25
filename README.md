@@ -15,6 +15,7 @@ o site estara disponivel em http://localhost:8080/
 cd .\adm\ 
 
 npm i -g npm@6.14.13
+npm install -g @angular/cli
 
 npm i
 
